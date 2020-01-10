@@ -61,6 +61,7 @@
             <artifactId>annotations-java5</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
         <dependency>  
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
