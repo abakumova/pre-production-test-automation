@@ -22,10 +22,17 @@
     </build>
 
     <properties>
+        <!--        BDD-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>2.0.69</serenity.version>
         <serenity.maven.version>2.0.69</serenity.maven.version>
         <serenity.cucumber.version>1.9.39</serenity.cucumber.version>
+        <!--        UI-->
+        <htmlelements.version>1.19</htmlelements.version>
+        <selenium.version>3.14.0</selenium.version>
+        <testng.version>6.14.3</testng.version>
+        <assertj.version>3.12.2</assertj.version>
+        <maven.surefire.plugin.version>2.18.1</maven.surefire.plugin.version>
     </properties>
 
     <dependencies>
@@ -135,11 +142,6 @@
         </dependency>
         <!--        BDD-->
         <dependency>
-            <groupId>ru.yandex.qatools.htmlelements</groupId>
-            <artifactId>htmlelements-java</artifactId>
-            <version>1.19</version>
-        </dependency>
-        <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
             <version>${serenity.version}</version>
@@ -178,6 +180,18 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!--        UI-->
+        <dependency>
+            <groupId>ru.yandex.qatools.htmlelements</groupId>
+            <artifactId>htmlelements-java</artifactId>
+            <version>1.19</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
