@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        glue = "com.epam.automation.bdd.tests.stepdefs",
+        glue = "com.automation.bdd.tests.stepdefs",
         features = {"src/test/resources/features/"})
 public class CucumberRunner {
 }

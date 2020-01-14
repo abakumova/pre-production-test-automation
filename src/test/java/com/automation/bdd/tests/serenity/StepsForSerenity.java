@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import net.thucydides.core.annotations.Step;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepsForSerenity {
